@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anaheim', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(220, 220, 200);
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    margin: 20px;
+    font-size: 48px;
+    position: relative;
+}
+h1:before{
+    content: 'Megalofive';
+    color: red;
+    z-index: -1;
+    position: absolute;
+    left: -2px;
+}
+h1:after{
+    content: 'Megalofive';
+    color: cyan;
+    z-index: -1;
+    position: absolute;
+    left: 2px;
+}
+p {
+    font-size: 25px;
+}
+p#tempo {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.buttons {
+    margin: 20px;
+}
+button {
+    margin: 5px;
+    color: #fff;
+    padding: 5px 25px;
+    font-size: 18px;
+    border: none;
+    background-color: #333;
+    box-shadow: none;
+    transition: all 0.2s ease;
+    outline: none;
+}
+button:hover {
+    background-color: #444;
+    box-shadow: -2px 0px red, 2px 0px cyan;
+}
